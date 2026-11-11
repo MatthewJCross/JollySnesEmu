@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <PlatformTarget>x64</PlatformTarget>
+	  <Platforms>x64</Platforms>
+	  <RootNamespace>JollySnesEmu</RootNamespace>
+    <AssemblyName>JollySnesEmu</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+	  <PackageReference Include="NAudio" Version="3.1.0" />
+	  <PackageReference Include="Vortice.Direct3D11" Version="3.8.1" />
+	  <PackageReference Include="Vortice.DXGI" Version="3.8.1" />
+
+	  <Reference Include="Jolly2DEngine">
+		  <HintPath>Libraries\Jolly2DEngine.dll</HintPath>
+		  <Private>true</Private>
+	  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libraries\Rendering\DirectX\Shaders\*.cso">
+      <Link>Rendering\DirectX\Shaders\%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

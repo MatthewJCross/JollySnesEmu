@@ -1,68 +1,44 @@
-# Prerequisites
-*.d
+# Build output
+bin/
+obj/
+[Bb]in/
+[Oo]bj/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-# Precompiled Headers
-*.gch
-*.pch
+# Visual Studio Code
+.vscode/
 
-# Linker files
-*.ilk
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
 
-# Debugger Files
-*.pdb
+# Build and publish output
+artifacts/
+publish/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.so.*
+# Logs
+*.log
 
-# Fortran module files
-*.mod
-*.smod
+# NuGet packages
+*.nupkg
+*.snupkg
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# Build directories
-build/
-Build/
-build-*/
-
-# CMake generated files
-CMakeFiles/
-CMakeCache.txt
-cmake_install.cmake
-Makefile
-install_manifest.txt
-compile_commands.json
+# Operating system files
+Thumbs.db
+.DS_Store
 
 # Temporary files
 *.tmp
-*.log
 *.bak
-*.swp
 
-# vcpkg
-vcpkg_installed/
-
-# debug information files
-*.dwo
-
-# test output & cache
-Testing/
-.cache/
+# Local environment settings and secrets
+.env
+.env.*
+!.env.example
+secrets.json
